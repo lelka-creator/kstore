@@ -1,0 +1,286 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kstore</title>
+    <meta name="author" content="Dobrovoimaster" />
+    <meta name="description" content="Боковая панель с элементами меню, выдвигающаяся по клику, на чистом css, без использлвания javascript" />
+    <meta name="keywords" content="боковое меню, выдвижное меню, выдвигающееся по клику, боковая панеь, css3, html, css" />
+    <link rel="shortcut icon" href="/img/ks3.png" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/left-nav-style.css">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- 
+    Скрытый checkbox, отвечающий за переключение панели, должен быть в верхней части документа, лучше сразу после тега `<body>`
+
+    `id` атрибут предназначен для связки с атрибутом `for` тега <label>
+
+    Атрибут `hidden` указывает состояние «скрытый» у текущего элемента
+    -->
+    <input type="checkbox"  id="nav-toggle" hidden >
+    
+   
+    
+    
+    
+    
+    <!-- 
+    Выдвижную панель размещаете ниже
+    флажка (checkbox), но не обязательно 
+    непосредственно после него, например
+    можно и в конце страницы
+    -->
+    <nav  class="nav">
+        <!-- 
+    Метка с именем `id` чекбокса в `for` атрибуте
+    Символ Unicode 'TRIGRAM FOR HEAVEN' (U+2630)
+    Пустой атрибут `onclick` используем для исправления бага в iOS < 6.0
+    См: http://timpietrusky.com/advanced-checkbox-hack 
+    -->
+        <label for="nav-toggle"  class="nav-toggle" onclick></label>
+        
+        <!-- 
+    Здесь размещаете любую разметку,
+    если это меню, то скорее всего неупорядоченный список <ul>
+    -->
+        <h2 class="logo"> 
+            <a href="./index.html">Kstore</a> 
+        </h2>
+        <ul>
+            <li><a href="#Tee">Чайники</a>
+            <li><a href="#Waters">Увлажнители</a>
+            <li><a href="#Cleening">Очистители воздуха</a>
+            <li><a href="#pulisos">Пылесосы ручные</a>
+            <li><a href="#PulisosRobot">Пылесосы роботы</a></li>
+                <a href="https://drive.google.com/file/d/1AmIFkauSXcNML7JjrItIlPLEfG7F7XWW/view?usp=sharing" target="_blank" >Роботы спецификация</a>
+                
+            <li><a href="#Par">Отпариватели</a>
+            <li><a href="#Blender">Блендеры</a>
+            <li><a href="#NastLampi">Лампы настольные</a>
+            <li><a href="#LampiPotolok">Лампы потолочные</a>
+            <li><a href="#Lampochki">Лампочки</a>
+            <li><a href="#Niteki">Ночники</a>
+            <li><a href="#Microvolnovka">Микроволновка</a>
+            <li><a href="#Samokat">Электросамокаты</a>   
+            <li><a href="#zakaz">Заказы</a>      
+        </ul>
+    </nav>
+    <!-- 
+    Маска (затемнение) основного контента при включенной панели
+    по-умолчанию данная фишка не используется, если оно вам надо,
+		просто расккоментируйте div-контейнер ниже
+		
+    <div class="mask-content"></div>
+		-->
+		
+    <!-- 
+    Далее размещаем любую разметку,
+    много слов, картинки и т.д...
+    -->
+    <main role="main">
+        <article>
+            <header>
+                <h1  class="header__title">Информация</h1>
+                <h2>Рейтинги</h2> 
+            </header>
+            <section>
+               <p style="text-align: center;">
+                <a href="index.html"  id="Panel" class="btn btn-primary">-Бытовая техника/ <br/>-Лампы/Ночники/<br/>-Электросамокаты</a>  
+                <a href="right-slide-panel.html" class="btn btn-secondary">Меню Справа</a>
+                <p>
+                <p></p>
+                <p>
+            </section>
+        <div class="color" id="Tee">
+            <h3 style="text-align: center;" >Чайники</h3>
+            <table style="text-align:center;" >
+                <caption></caption>
+                <tr style="text-align: center;">
+                 <th><a href="https://ru-mi.com/device/umnyiy-dom/byitovaya-tehnika-xiaomi/chayniki-xiaomi/" target="_blank" ><img class="BigIcon" src="./img/ru1.jpg" width="100"  alt=""></a></th>
+                 <th ><a href="https://market.yandex.ru/compare/4c9d1ab5e9b35e14f171a7c8c143e67de48b0ba1a68a31d58418a3f0d6ceddd5?hid=90586&id=234789033&id=1710665160&id=1733335948&id=668572009"target="_blank" ><img class="BigIcon" src="./img/ya.png" width="120"  height="100" alt=""></a></th>
+                 <th><a href="https://tyumen.kstore.ru/search&search=%D1%87%D0%B0%D0%B9%D0%BD%D0%B8%D0%BA" target="_blank"  ><img  class="BigIcon" src="./img/ks1.jpg" width="100" height="75" alt=""></a></th>
+                 <tr><td>Румиком</td><td>Рейтинги</td><td>На сайте</td></tr>
+                </tr>
+            </table>
+        </div>
+            <!-- <hr> -->
+        <div class="color" id="Waters" >
+            <h3 style="text-align: center;" >Увлажнители</h3>
+            <table style="text-align:center;" >
+                <caption></caption>
+                <tr style="text-align: center;">
+                 <th><a href="https://ru-mi.com/search/?search=%D1%83%D0%B2%D0%BB%D0%B0%D0%B6%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D1%8C" target="_blank"><img class="BigIcon" src="./img/ru1.jpg" width="100"  alt=""></a></th>
+                 <th ><a href="https://market.yandex.ru/compare/8b5d54513852bd6e19439c52f255e2d8e0b89ee968286798876d1a76382de6a0?hid=734595&id=36875316&id=622436074&id=237938749&id=739097547&id=368056993" target="_blank" ><img class="BigIcon" src="./img/ya.png" width="120"  height="100" alt=""></a></th>
+                 <th><a href="https://tyumen.kstore.ru/index.php?route=product/search&search=%D1%83%D0%B2%D0%BB%D0%B0%D0%B6%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D1%8C"target="_blank"><img class="BigIcon" src="./img/ks1.jpg" width="100" height="75" alt=""></a></th>
+                 <tr><td>Румиком</td><td>Рейтинги</td><td>На сайте</td></tr>
+                </tr>
+            </table>
+        </div>
+            <!-- <hr> -->
+        <div class="color" id="Cleening">
+            <h3 style="text-align: center;" >Очистители</h3>
+            <table style="text-align:center;" >
+                <caption></caption>
+                <tr style="text-align: center;">
+                 <th><a href="https://ru-mi.com/search/?search=%D0%BE%D1%87%D0%B8%D1%81%D1%82%D0%B8%D1%82%D0%B5%D0%BB%D1%8C"target="_blank"><img class="BigIcon" src="./img/ru1.jpg" width="100"  alt=""></a></th>
+                 <th ><a href="https://market.yandex.ru/compare/8b5d54513852bd6e19439c52f255e2d8e0b89ee968286798876d1a76382de6a0?hid=734595&id=33215452&id=628889058&id=1714808828&id=1877407507" target="_blank"><img class="BigIcon" src="./img/ya.png" width="120"  height="100" alt=""></a></th>
+                 <th><a href="https://tyumen.kstore.ru/index.php?route=product/search&search=%D0%BE%D1%87%D0%B8%D1%81%D1%82%D0%B8%D1%82%D0%B5%D0%BB%D1%8C"target="_blank" ><img class="BigIcon" src="./img/ks1.jpg" width="100" height="75" alt=""></a></th>
+                 <tr><td>Румиком</td><td>Рейтинги</td><td>На сайте</td></tr>
+                </tr>
+            </table>
+        </div>
+            <!-- <hr> -->
+        <div class="color" id="pulisos">
+            <h3 style="text-align: center;" >Пылесосы ручные</h3>
+            <table  style="text-align:center;" >
+                <caption ></caption>
+                <tr style="text-align: center;">
+                 <th ><a href="https://ru-mi.com/device/umnyiy-dom/byitovaya-tehnika-xiaomi/pyilesosyi-xiaomi/ruchnyie-pyilesosyi/" target="_blank"><img class="BigIcon" src="./img/ru1.jpg" width="100"  alt=""></a></th>
+                 <th ><a href="https://market.yandex.ru/compare/53b02cc37c87c305ba5f645c84f92dd230c084c5bf6a26a624d923d21750022a?hid=16302537&id=107658914&id=608390468&id=700800039&id=734061017&id=463956168&id=419328098&id=673192011&id=661508056" target="_blank"><img class="BigIcon" src="./img/ya.png" width="120"  height="100" alt=""></a></th>
+                 <th><a href="https://tyumen.kstore.ru/index.php?route=product/search&search=%D0%B1%D0%B5%D1%81%D0%BF%D1%80%D0%BE%D0%B2%D0%BE%D0%B4%D0%BD%D0%BE%D0%B9%20%D0%BF%D1%8B%D0%BB%D0%B5%D1%81%D0%BE%D1%81"target="_blank"><img class="BigIcon" src="./img/ks1.jpg" width="100" height="75" alt=""></a></th>
+                 <tr><td>Румиком</td><td>Рейтинги</td><td>На сайте</td></tr>
+                </tr>
+            </table>
+        </div>
+        <div class="color" id="PulisosRobot">
+            <!-- <hr> -->
+            <h3  style="text-align: center;" >Пылесосы Роботы</h3>
+            <table style="text-align:center;" >
+                <caption></caption>
+                <tr style="text-align: center;">
+                 <th><a href="https://ru-mi.com/device/umnyiy-dom/byitovaya-tehnika-xiaomi/pyilesosyi-xiaomi/robotyi-pyilesosyi/" target="_blank"><img class="BigIcon" src="./img/ru1.jpg" width="100"  alt=""></a></th>
+                 <th ><a href="https://market.yandex.ru/compare/007992cfe44e3fceb6d21688b511bb482f200853f293c9a70c13b56a900deee6?hid=16302536&id=440850544&id=440851540&id=630049531&id=14260832" target="_blank"><img class="BigIcon" src="./img/ya.png" width="120"  height="100" alt=""></a></th>
+                 <th><a href="https://tyumen.kstore.ru/index.php?route=product/search&search=%D1%80%D0%BE%D0%B1%D0%BE%D1%82%20%D0%BF%D1%8B%D0%BB%D0%B5%D1%81%D0%BE%D1%81"target="_blank"><img class="BigIcon" src="./img/ks1.jpg" width="100" height="75" alt=""></a></th>
+                 <tr><td>Румиком</td><td>Рейтинги</td><td>На сайте</td></tr>
+                </tr>
+            </table>
+        </div>
+        <div class="color"  id="Par">
+            <h3  style="text-align: center;" >Отпариватели</h3>
+            <table style="text-align:center;" >
+                <caption></caption>
+                <tr style="text-align: center;">
+                 <th><a href="https://ru-mi.com/search/?search=%D0%BE%D1%82%D0%BF%D0%B0%D1%80%D0%B8%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C" target="_blank"><img class="BigIcon" src="./img/ru1.jpg" width="100"  alt=""></a></th>
+                 <th ><a href="https://market.yandex.ru/compare/40819621eed802f22d919849e278ea39c90b506b56791ef233ced8d61f7dd3f9?hid=16147812&id=418754060&id=536099033&id=653537059&id=653536065" target="_blank"><img class="BigIcon" src="./img/ya.png" width="120"  height="100" alt=""></a></th>
+                 <th><a href="https://tyumen.kstore.ru/index.php?route=product/search&search=%D0%BE%D1%82%D0%BF%D0%B0%D1%80%D0%B8%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C" target="_blank" ><img class="BigIcon" src="./img/ks1.jpg" width="100" height="75" alt=""></a></th>
+                 <tr><td>Румиком</td><td>Рейтинги</td><td>На сайте</td></tr>
+                </tr>
+            </table>
+        </div>
+        <div class="color" id="Blender">
+            <h3  style="text-align: center;" >Блендеры</h3>
+            <table style="text-align:center;" >
+                <caption></caption>
+                <tr style="text-align: center;">
+                 <th><a class="header_compare" href="https://ru-mi.com/search/?search=%D0%B1%D0%BB%D0%B5%D0%BD%D0%B4%D0%B5%D1%80" target="_blank"><img class="BigIcon" src="./img/ru1.jpg" width="100"  alt=""></a></th>
+                 <th ><a href="https://market.yandex.ru/compare/a779238639eded8a30213b581aafff5ed94be86709e03e2b6662b049f4449224?hid=765280&id=356014125&id=1971186139&id=515137007&id=543498026&id=104176332&id=657059064" target="_blank"><img class="BigIcon" src="./img/ya.png" width="120"  height="100" alt=""></a></th>
+                 <th><a href="https://tyumen.kstore.ru/search&search=%D0%B1%D0%BB%D0%B5%D0%BD%D0%B4%D0%B5%D1%80"target="_blank" ><img class="BigIcon" src="./img/ks1.jpg" width="100" height="75" alt=""></a></th>
+                 <tr><td>Румиком</td><td>Рейтинги</td><td>На сайте</td></tr>
+                </tr>
+            </table>
+        </div>
+        <div class="color" id="NastLampi">
+            <h3  style="text-align: center;" >Лампы Настольные</h3> 
+            <table style="text-align:center;" >
+                <caption></caption>
+                <tr style="text-align: center;">
+                 <th><a class="header_compare" href="https://ru-mi.com/device/umnyiy-dom/umnyiy-svet/nastolnyie-lampyi/" target="_blank"><img class="BigIcon" src="./img/ru1.jpg" width="100"  alt=""></a></th>
+                 <th ><a href="https://market.yandex.ru/compare/8c0e55aa9ddeef030db3f91a99d448f2ec7bd2f46af880f6d46188178479cf52?hid=90711&id=41266569&id=454095027&id=454096028&id=652204724&id=719145028" target="_blank"><img class="BigIcon" src="./img/ya.png" width="120"  height="100" alt=""></a></th>
+                 <th><a href="https://tyumen.kstore.ru/search&search=%D0%BD%D0%B0%D1%81%D1%82%D0%BE%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20"target="_blank" ><img class="BigIcon" src="./img/ks1.jpg" width="100" height="75" alt=""></a></th>
+                 <tr><td>Румиком</td><td>Рейтинги</td><td>На сайте</td></tr>
+                </tr>
+            </table>
+        </div>
+        <div class="color" id="LampiPotolok">
+            <h3  style="text-align: center;" >Лампы Потолочные</h3>
+            <table style="text-align:center;" >
+                <caption></caption>
+                <tr style="text-align: center;">
+                 <th><a class="header_compare" href="https://ru-mi.com/device/umnyiy-dom/umnyiy-svet/potolochnyie-svetilniki/potolochnye-lampy-xiaomi/" target="_blank"><img class="BigIcon" src="./img/ru1.jpg" width="100"  alt=""></a></th>
+                 <th ><a href="https://market.yandex.ru/compare/194374491923b40239c641f902f22605bb6439a532dcba05abf0ebc04521d4fb?hid=90710&id=441413411" target="_blank"><img class="BigIcon" src="./img/ya.png" width="120"  height="100" alt=""></a></th>
+                 <th><a href="https://tyumen.kstore.ru/index.php?route=product/search&search=%D0%BF%D0%BE%D1%82%D0%BE%D0%BB%D0%BE%D1%87"target="_blank" ><img class="BigIcon" src="./img/ks1.jpg" width="100" height="75" alt=""></a></th>
+                 <tr><td>Румиком</td><td>Рейтинги</td><td>На сайте</td></tr>
+                </tr>
+            </table>
+        </div>
+        <div class="color" id="Lampochki">
+            <h3  style="text-align: center;" >Лампочки</h3>
+            <table style="text-align:center;" >
+                <caption></caption>
+                <tr style="text-align: center;">
+                 <th><a class="header_compare" href="https://ru-mi.com/device/umnyiy-dom/umnyiy-svet/lampochki/" target="_blank"><img class="BigIcon" src="./img/ru1.jpg" width="100"  alt=""></a></th>
+                 <th ><a href="https://market.yandex.ru/compare/c9778c8ff5edb3bd5d5a451374bd4a678d1f507365d4c3e88790d6a5a6077af3?hid=90713&id=718264086&id=280600397&id=705625269" target="_blank"><img class="BigIcon" src="./img/ya.png" width="120"  height="100" alt=""></a></th>
+                 <th><a href="https://tyumen.kstore.ru/index.php?route=product/search&search=%D0%BB%D0%B0%D0%BC%D0%BF"target="_blank" ><img class="BigIcon" src="./img/ks1.jpg" width="100" height="75" alt=""></a></th>
+                 <tr><td>Румиком</td><td>Рейтинги</td><td>На сайте</td></tr>
+                </tr>
+            </table>
+        </div>
+        <div class="color" id="Niteki">
+            <h3  style="text-align: center;" >Ночники</h3>
+            <table style="text-align:center;" >
+                <caption></caption>
+                <tr style="text-align: center;">
+                 <th><a class="header_compare" href="https://ru-mi.com/device/umnyiy-dom/umnyiy-svet/nochniki/" target="_blank"><img class="BigIcon" src="./img/ru1.jpg" width="100"  alt=""></a></th>
+                 <th ><a href="https://market.yandex.ru/compare/530e9c080cfa639dba39f7818bf91c3b20a144e2f92a5e4b7d8b441fbb675373?hid=90712&id=673318677&id=726307035&id=657064955" target="_blank"><img class="BigIcon" src="./img/ya.png" width="120"  height="100" alt=""></a></th>
+                 <th><a href="https://tyumen.kstore.ru/index.php?route=product/search&search=%D0%BD%D0%BE%D1%87%D0%BD%D0%B8%D0%BA"target="_blank" ><img class="BigIcon" src="./img/ks1.jpg" width="100" height="75" alt=""></a></th>
+                 <tr><td>Румиком</td><td>Рейтинги</td><td>На сайте</td></tr>
+                </tr>
+            </table>
+        </div>
+        <div class="color" id="Microvolnovka">
+            <h3  style="text-align: center;" >Микроволновка</h3>
+            <table style="text-align:center;" >
+                <caption></caption>
+                <tr style="text-align: center;">
+                 <th><a class="header_compare" href="https://ru-mi.com/mikrovolnovaya-pech-xiaomi-mijia-microwave-oven-belyiy-mwvlxe1acm" target="_blank"><img class="BigIcon" src="./img/ru1.jpg" width="100"  alt=""></a></th>
+                 <th ><a href="https://market.yandex.ru/catalog--mikrovolnovye-pechi-v-tiumeni/54948/list?text=Xiaomi%20Mijia%20Microwave%20Oven%20MWBLXE1ACM&hid=90595&srnum=3&rs=eJwzSlSK5VKLyEzMz81U8M3MykwEkslF-eWJZakK_mWpeQq-4U4-Ea6Gjs6-Ak9uvmBXYuFgEODRYMgiUlMAIwAp_R8g&was_redir=1&rt=11&glfilter=16395492%3A16395562&onstock=0&local-offers-first=0" target="_blank"><img class="BigIcon" src="./img/ya.png" width="120"  height="100" alt=""></a></th>
+                 <th><a href="https://tyumen.kstore.ru/index.php?route=product/search&search=%D0%BC%D0%B8%D0%BA%D1%80%D0%BE%D0%B2%D0%BE%D0%BB"target="_blank" ><img class="BigIcon" src="./img/ks1.jpg" width="100" height="75" alt=""></a></th>
+                 <tr><td>Румиком</td><td>Рейтинги</td><td>На сайте</td></tr>
+                </tr>
+            </table>
+        </div>
+        <div class="color" id="Samokat">
+            <h3  style="text-align: center;" >Электросамокаты</h3>
+            <table style="text-align:center;" >
+                <caption></caption>
+                <tr style="text-align: center;">
+                 <th><a class="header_compare" href="https://ru-mi.com/category-transport/elektrosamokatyi/" target="_blank"><img class="BigIcon" src="./img/ru1.jpg" width="100"  alt=""></a></th>
+                 <th ><a href="https://market.yandex.ru/compare/5edfafd705f2bbe36f4e01312d831f26dba75ebd037d985bd9f5a63d69717cdb?hid=7070735&id=665682001&id=674452012&id=1719412670" target="_blank"><img class="BigIcon" src="./img/ya.png" width="120"  height="100" alt=""></a></th>
+                 <th><a href="https://tyumen.kstore.ru/elektrotransport/elektrosamokaty"target="_blank" ><img class="BigIcon" src="./img/ks1.jpg" width="100" height="75" alt=""></a></th>
+                 <tr><td>Румиком</td><td>Рейтинги</td><td>На сайте</td></tr>
+                </tr>
+            </table>
+        </div>
+        
+        
+
+
+
+
+       
+
+
+            <hr>
+            <footer>
+                <p id="zakaz"><a href="https://keep.google.com/u/0/#home"target="_blank">Заказы</a>
+                <p><a href="https://drive.google.com/file/d/13ZV0z9jA9bbeta71PJwySNJOSmfxHJXv/view?usp=sharing"target="_blank" >График-2020</a>
+            </footer>
+        </article>
+    </main>
+</body>
+
+</html>
